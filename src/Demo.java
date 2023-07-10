@@ -1,7 +1,7 @@
 public class Demo {
     public static void main(String[] args) {
-        Singalton singalton1 = new Singalton();
-        Singalton singalton2 = new Singalton();
-        System.out.println(singalton1==singalton2);
+        Singleton singleton1 = Singleton.getInstance();
+        Singleton singleton2 = Singleton.getInstance();
+        System.out.println(singleton1.equals(singleton2));
     }
 }
